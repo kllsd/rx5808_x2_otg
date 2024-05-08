@@ -37,7 +37,7 @@ RX5808模块在淘宝咸鱼上都有卖的，价格基本在20-30之间，注意
 
 买到开关模式的RX5808模块也不要悲伤，将RX5808模块开盖按照下图操作即可改为spi模式
 
-<img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/img/rx808_1.jpg" width="480px">
+<img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/img/rx5808_1.jpg" width="480px">
 
 RX5808的频率表如下(单位MHz)：
 
