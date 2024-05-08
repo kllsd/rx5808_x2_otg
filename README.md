@@ -50,7 +50,7 @@ ms2107虽然不会对画质进行压缩，但是ms2107对设备和usb的速度�
 
 - [下载工具&BIN文件](/MS2107/)
 
-![](MS2107_1.png)
+<img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/MS2107_1.png" width="210px">
 
 
 ---
