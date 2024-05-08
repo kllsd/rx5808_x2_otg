@@ -58,6 +58,10 @@ ms2107虽然不会对画质进行压缩，但是ms2107对设备和usb的速度�
 
 <img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/img/MS2107_2.png" width="480px">
 
+(3) 点击Open File打开bin文件(MS2107_24C16_Demo_V1.7.1_262E_20220719.bin), 再点击Download下载
+
+<img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/img/MS2107_3.png" width="480px">
+
 ---
 
 ### LICENSE
