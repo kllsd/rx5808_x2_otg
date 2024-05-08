@@ -35,6 +35,10 @@ IDE使用Mounriver Studio
 
 RX5808模块在淘宝咸鱼上都有卖的，价格基本在20-30之间，注意要买spi模式的，不然开关模式只有8个频段，RX5808的代码非常简单，可以移植到各种单片机上。
 
+买到开关模式的RX5808模块也不要悲伤，将RX5808模块开盖按照下图操作即可改为spi模式
+
+<img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/img/rx808_1.jpg" width="480px">
+
 RX5808的频率表如下(单位MHz)：
 
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | CH/GRUP |
