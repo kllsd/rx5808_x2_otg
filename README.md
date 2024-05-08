@@ -15,7 +15,7 @@ rx5808_x2_otg is a dual receiver for 5.8g analog signal image transmission for m
 
 ### 中文
 
-rx5808_x2_otg是基于rx5808模块5.8g手机图传双接收机
+rx5808_x2_otg是基于rx5808模块的5.8g手机图传双接收机
 
 ---
 
