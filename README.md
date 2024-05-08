@@ -56,7 +56,7 @@ RX5808模块内部芯片为RTC6715，根据RTC6715的数据手册描述，SPI为
 
 具体时序参考下图：
 
-<img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/img/rx5808_2.png" width="500px">
+<img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/img/rx5808_2.png" width="560px">
 
 ## MS2107
 
