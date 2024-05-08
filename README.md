@@ -9,7 +9,7 @@
 
 ### English
 
-Rx5808_x2_otg is a 5.8g image transmission dual receiver for mobile phones
+rx5808_x2_otg is a dual receiver for 5.8g analog signal image transmission for mobile phones or computers
 
 ---
 
