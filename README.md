@@ -96,6 +96,50 @@ void RTC6715_SPI_Send(uint8_t n)
 }
 ```
 
+RX5808设置频率
+```C
+uint32_t RTC6715_CalculateFrequencyData(u16 frequency)
+{
+    uint16_t N;
+    uint8_t A;
+    frequency = (frequency - 479)/2;
+    N = frequency/32;
+    A = frequency%32;
+    return (N << 7 | A);
+}
+
+void RTC6715_SetFrequency(u16 frequency)
+{
+    uint32_t sRegB;
+    uint8_t i;
+
+    sRegB = RTC6715_CalculateFrequencyData(frequency);
+
+    // Enable SPI pin
+    RTC6715_SPI_Select(DISABLE);
+    Delay_Us(1);
+    RTC6715_SPI_Select(ENABLE);
+
+    // Address (0x01)
+    RTC6715_SPI_Send(1);
+    RTC6715_SPI_Send(0);
+    RTC6715_SPI_Send(0);
+    RTC6715_SPI_Send(0);
+
+    // Read/Write (Write)
+    RTC6715_SPI_Send(1);
+
+    // Data (20 LSB bits)
+    for (i = 0; i < 20; i++) {
+        ((sRegB>>i) & 0x1) ? RTC6715_SPI_Send(1) : RTC6715_SPI_Send(0);
+    }
+
+    // Disable SPI pin
+    RTC6715_SPI_Select(DISABLE);
+    Delay_Us(1);
+}
+```
+
 ## MS2107
 
 这里的视频采集方案采用ms2107方案，ms2107是一款视频和音频采集芯片，支持cvbs, s-video信号和音频信号转usb。
