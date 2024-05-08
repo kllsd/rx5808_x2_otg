@@ -58,6 +58,7 @@ RX5808模块内部芯片为RTC6715，根据RTC6715的数据手册描述，SPI为
 
 <img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/img/rx5808_2.png" width="560px">
 
+SPI片选(SPI_CS)
 ```C
 void RTC6715_SPI_Select(FunctionalState NewState)
 {
@@ -70,6 +71,27 @@ void RTC6715_SPI_Select(FunctionalState NewState)
     {
         GPIO_SetBits(SPI_Soft_GPIO_Port, SPI_Soft_CS);
     }
+    Delay_Us(1);
+}
+```
+
+SPI发送1个比特
+```C
+void RTC6715_SPI_Send(uint8_t n)
+{
+    GPIO_ResetBits(SPI_Soft_GPIO_Port, SPI_Soft_SCK);
+    Delay_Us(1);
+    if(n == 1)
+    {
+        GPIO_SetBits(SPI_Soft_GPIO_Port, SPI_Soft_MOSI);
+    }
+    else {
+        GPIO_ResetBits(SPI_Soft_GPIO_Port, SPI_Soft_MOSI);
+    }
+    Delay_Us(1);
+    GPIO_SetBits(SPI_Soft_GPIO_Port, SPI_Soft_SCK);
+    Delay_Us(1);
+    GPIO_ResetBits(SPI_Soft_GPIO_Port, SPI_Soft_SCK);
     Delay_Us(1);
 }
 ```
