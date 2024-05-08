@@ -17,6 +17,10 @@ rx5808_x2_otg is a dual receiver for 5.8g analog signal image transmission for m
 
 rx5808_x2_otg是基于rx5808模块的5.8g手机图传双接收机
 
+本项目就是把rx5808和av转usb芯片整合，做成usb图传，配合usb线可连接任何支持usb视频流的设备实现图传。
+这里av信号转usb芯片用的是ms2107，之前作者也用过更便宜的ms2106，但在各种实验之后还是选择ms2107。
+但是ms2106会压缩画质，ms2107就不会，但是ms2107对设备和usb线的长度有要求，usb线的长度不能超过30cm，且手机端必须是支持usb3.0的手机，太老旧的手机可以考虑使用ms2106
+
 ---
 
 ### LICENSE
