@@ -54,9 +54,9 @@ RX5808的频率表如下(单位MHz)：
 
 RX5808模块内部芯片为RTC6715，根据RTC6715的数据手册描述，SPI为25位，其中地址位4位，数据位20位，还有1位读写命令
 
-具体时许参考下图：
+具体时序参考下图：
 
-<img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/img/rx5808_2.png" width="480px">
+<img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/img/rx5808_2.png" width="500px">
 
 ## MS2107
 
