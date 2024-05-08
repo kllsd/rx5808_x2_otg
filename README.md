@@ -2,8 +2,8 @@
 
 ## Language
 
-- [English](README_EN.md)
-- [中文](README_zh_CN.md)
+- [English](#english)
+- [中文](#中文)
 
 ---
 
