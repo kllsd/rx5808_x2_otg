@@ -17,7 +17,7 @@ rx5808_x2_otg is a dual receiver for 5.8g analog signal image transmission for m
 
 rx5808_x2_otg是基于rx5808模块的5.8g手机图传双接收机
 
-本项目目的就是把rx5808接收机和usb视频采集卡整合，做成usb图传，配合usb线可连接任何支持usb视频流的设备实现图传。
+本项目将rx5808接收机和usb视频采集卡整合，做成usb图传，配合usb线可连接任何支持usb视频流的设备实现图传。
 
 ## CH32X035C8T6
 
@@ -34,6 +34,10 @@ IDE使用Mounriver Studio
 ## RX5808 5.8g视影音模块
 
 RX5808模块在淘宝咸鱼上都有卖的，价格基本在20-30之间，注意要买spi模式的，不然开关模式只有8个频段，RX5808的代码非常简单，可以移植到各种单片机上。
+
+买到开关模式的RX5808模块也不必悲伤，将RX5808模块开盖按照下图操作即可改为spi模式
+
+<img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/img/rx5808_1.jpg" width="480px">
 
 RX5808的频率表如下(单位MHz)：
 
