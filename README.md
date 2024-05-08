@@ -46,9 +46,15 @@ ms2107虽然不会对画质进行压缩，但是ms2107对设备和usb的速度�
 
 经作者试验，usb线的长度不要超过30cm，设备端必须是支持usb2.0高速(HIGH SPEED 480Mbps)接口的设备。
 
-#### 下载烧录EEPROM
+### 下载烧录EEPROM
 
 - [下载工具&BIN文件](/MS2107/)
+
+(1) 打开下载工具(MS21XX&91XXDownloadTool_1.7.2_BUILD20230104.exe)，选择MS2107
+
+<img src="https://github.com/kllsd/rx5808_x2_otg/blob/main/MS2107_1.png" width="480px">
+
+(2) 将板子连接电脑，点击Connect，再点击Read，可以看到读出来的信息（默认是全0xFF)
 
 
 
