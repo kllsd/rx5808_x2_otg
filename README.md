@@ -21,4 +21,4 @@ rx808_x2_otg是基于rx808模块的5.8g手机图传接收机
 
 ### LICENSE
 
--LICENSE(LICENSE)
+-[LICENSE](LICENSE)
